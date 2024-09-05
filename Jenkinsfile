@@ -12,10 +12,10 @@ pipeline {
                 sh '''
                 # Add sonarqube_project and sonarqube_token to the Jenkins configuration pipeline
                 sonar-scanner \
-                  -Dsonar.projectKey=$sonarqube_project \
+                  -Dsonar.projectKey=chaimaa_E-RESTAURATION  \
                   -Dsonar.sources=. \
-                  -Dsonar.host.url=http://sonarqube:9000 \
-                  -Dsonar.token=$sonarqube_token
+                  -Dsonar.host.url=http://192.168.1.24:9000 \
+                  -Dsonar.token=sqp_6dbf1fc4c541a66ed39686f6da68a13d49fd35d8
                 '''
             }
         }
