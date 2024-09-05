@@ -7,6 +7,7 @@ pipeline {
 	            git branch: 'main', url: 'https://github.com/ChaimaaAghlimou/E-RESTAURATION.git'
             }
         }
+        // stage clone permetter de cloner le projet 
         stage('Contrôle qualité') {
             steps {
                 sh '''
