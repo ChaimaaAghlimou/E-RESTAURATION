@@ -8,6 +8,7 @@ pipeline {
             }
         }
         // stage clone permetter de cloner le projet 
+        
         stage('Contrôle qualité') {
             steps {
                 sh '''
